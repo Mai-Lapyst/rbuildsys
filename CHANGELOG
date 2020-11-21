@@ -1,2 +1,17 @@
+1.0.0
+    - Fixed gramatical errors
+    - Usage now print out aviable projects to build
+    - Renamed the '-b' option into '--rebuild' and '--rebuild-all'
+    - Implemented installation of library projects
+    - Projects can now use installed projects as dependency with 'use()'
+    - Changed '-i': now optionaly takes a directory where to install
+    - Changed 'use()': added a second parameter that specify how to link the project
+    - Added toolchain support!
+    - Removed ':compiler' option for newProject. Use a custom toolchain instead
+    - Added configure of files like cmake; not fully implemented
+    - Added ability to let the output name of an project be different than its configured name
+    - Added ability to specify globs to find source files (see 'srcGlob()')
+    - Added ability for librarys to publish include directorys to use for other projects (see 'publish_incDir')
+
 0.0.1.pre
     First version

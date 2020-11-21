@@ -1,0 +1,26 @@
+{
+    "name": "i686-mingw32-w64",
+    "os": "windows",
+    "compiler": {
+        "c": "i686-w64-mingw32-gcc",
+        "c++": "i686-w64-mingw32-g++"
+    },
+    "archiver": "i686-w64-mingw32-ar",
+    "flags": {
+        "debug": "-g",
+        "include": "-I",
+        "libPath": "-L",
+        "libLink": "-l",
+        "output": "-o",
+        "allWarnings": "-Wall",
+        "pic": "-fPIC",
+        "langStd": "-std",
+        "define": "-D"
+    },
+    "output_filenames": {
+        "exec": "@NAME@.exe",
+        "staticLib": "@NAME@.lib",
+        "dynamicLib": "@NAME@.dll"
+    },
+    "extra_flags": "-static-libgcc -static-libstdc++"
+}

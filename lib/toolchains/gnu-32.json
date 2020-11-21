@@ -1,0 +1,26 @@
+{
+    "name": "gnu-32",
+    "os": "linux",
+    "compiler": {
+        "c": "gcc",
+        "c++": "g++"
+    },
+    "archiver": "ar",
+    "flags": {
+        "debug": "-g",
+        "include": "-I",
+        "libPath": "-L",
+        "libLink": "-l",
+        "output": "-o",
+        "allWarnings": "-Wall",
+        "pic": "-fPIC",
+        "langStd": "-std",
+        "define": "-D"
+    },
+    "output_filenames": {
+        "exec": "@NAME@.run",
+        "staticLib": "lib@NAME@.a",
+        "dynamicLib": "lib@NAME@.so"
+    },
+    "extra_flags": "-m32"
+}
